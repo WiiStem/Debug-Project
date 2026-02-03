@@ -34,7 +34,7 @@ function printReciept(customer) {
 }
 
 function main() {
-  const receipts = customers.forEach((customer) => printReciept(customer));
+  const receipts = customers.map((customer) => printReciept(customer));
 
   console.log(`orders processed: ${processed}`);
   console.log(`orders' total: ${total}`);
